@@ -10,6 +10,11 @@ const app = express();
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static(path.join(__dirname, 'client/build')));
+app.get('/api/getList', (req,res) => {
+    var list = ["item1", "item2", "item3"];
+    res.json(list);
+    console.log('Sent list of items');
+});
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get('/', function(request, response) {
