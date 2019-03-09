@@ -19,6 +19,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          <button onClick={() => console.log(fetch('/api/getList').then(res => res.json()).then(res => console.log(res)))} >hi </button>
         </header>
       </div>
     );
