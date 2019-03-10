@@ -7,8 +7,10 @@
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
   "scripts": {
-    "prestart": "cd client && npm run build",
-    "start": "node server.js"
+    "prestart": "cd client && npm install && npm run build",
+    "start": "node server.js",
+    "devstartclient": "cd client && npm run start",
+    "devstartserver": "npm run start"
   },
   "dependencies": {
     "express": "^4.16.4",
