@@ -5,6 +5,7 @@ import _ from 'lodash/fp';
 import svgURL from 'assets/logo.svg'
 import {trace} from 'logger'
 
-_.flow(console.log, trace)(svgURL)
+_.flow(console?.log, trace)(svgURL)
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const root = ReactDOM.render(?, document.getElementById('root'));
+root(<App />)
