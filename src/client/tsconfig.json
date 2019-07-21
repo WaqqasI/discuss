@@ -19,7 +19,7 @@
     "paths": {
       "assets/*": ["assets/*"],
       "logger": ["util/logger"],
-      "shared/**/*": ["../shared/**/*"],
+      "shared/**/*": ["../shared/**/*"]
     },
     "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
     "emitDecoratorMetadata": true
