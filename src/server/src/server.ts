@@ -7,9 +7,9 @@ const app = express();
 
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
-
+console.log(__dirname);
 // http://expressjs.com/en/starter/static-files.html
-app.use(express.static('../../client/dist'));
+app.use('/', express.static(require('path').join(__dirname,'../../client/dist')));
 
 
 
