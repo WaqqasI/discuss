@@ -1,4 +1,4 @@
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin/lib/index');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const APP_PATH = path.resolve(__dirname, 'src');
@@ -12,7 +12,7 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: APP_PATH,
 
-    devServer: {
+  devServer: {
     contentBase: "./dist",
     port: process.env.PORT 
   },
@@ -27,7 +27,8 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js', '.json'],
     alias: {
       assets: srcPath('assets'),
-      logger: path.resolve(__dirname, 'src/util/logger')
+      logger: path.resolve(__dirname, 'src/util/logger'),
+      shared: path.resolve(__dirname, '../shared')
     }
   },
 
@@ -59,7 +60,7 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({ inject: true, template: path.join(APP_PATH, 'index.html') }),
+    new HtmlWebpackPlugin({ inject: true, template: path.join(path.resolve(__dirname, 'public'), 'index.html') }),
     new ForkTsCheckerWebpackPlugin(),
   ]
 };

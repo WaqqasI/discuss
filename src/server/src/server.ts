@@ -9,11 +9,11 @@ const app = express();
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
 // http://expressjs.com/en/starter/static-files.html
-app.use(express.static('dist'));
+app.use(express.static('../client/dist'));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/dist/index.html');
+  response.sendFile(__dirname + '../client/dist/index.html');
 });
 
 // listen for requests :)
