@@ -7,7 +7,9 @@ export interface ChannelSearchProps {
 export const ChannelSearch: FunctionComponent<ChannelSearchProps> = ({  }) => {
     return (
         <>
-            <input type="text" className="channel-search" />
+            <label>
+                <input type="text" className="channel-search" />
+            </label>
             <button> Search </button>
         <>
      )
