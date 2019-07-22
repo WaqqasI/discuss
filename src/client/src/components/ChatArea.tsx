@@ -14,9 +14,9 @@ export class ChatArea extends Component<ChatAreaProps, ChatAreaState> {
     };
     public render() {
         return (
-            <>
+            <div className="chat-area">
 
-            <>
+            </div>
          )
     }
 }

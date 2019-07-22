@@ -1,4 +1,5 @@
 import React from 'react';
+import 'main.css';
 import { Counter } from './Counter';
 import { Hello } from './Hello';
 import { Greet } from './Greet'
