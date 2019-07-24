@@ -11,6 +11,6 @@ export const ChannelSearch: FunctionComponent<ChannelSearchProps> = ({  }) => {
                 <input type="text" className="channel-search" />
             </label>
             <button> Search </button>
-        <>
+        </>
      )
 }
