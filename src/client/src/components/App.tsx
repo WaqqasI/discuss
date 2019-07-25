@@ -4,7 +4,7 @@ import {ChatArea} from "./subComponents/ChatArea";
 
 
 export const App = () => (
-  <>
+  <div className={'container'}>
     <ChatArea />
-  </>
+  </div>
 );
