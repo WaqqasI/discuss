@@ -44,7 +44,8 @@
     "express": "^4.16.4",
     "lodash": "^4.17.11",
     "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "react-dom": "16.8.6",
+    "socket.io": "^2.2.0"
   },
   "resolutions": {
     "terser": "3.14.1"

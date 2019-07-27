@@ -3,6 +3,8 @@ import {NavHeader} from "../NavHeaderComponent/NavHeader";
 import {ChannelList} from "../ChannelListComponent/ChannelList";
 import {NavFooter} from "../NavFooterComponent/NavFooter";
 
+import './NavigationStyle.css';
+
 export interface NavigationProps {
 
 }

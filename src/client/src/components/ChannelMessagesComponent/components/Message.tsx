@@ -2,6 +2,8 @@ import React, { FunctionComponent } from 'react';
 import {MessageHeading} from "./MessageHeading";
 import {MessageContent} from "./MessageContent";
 
+import './message-style.css'
+
 export interface MessageProps {
 
 }

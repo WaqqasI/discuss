@@ -1,5 +1,7 @@
 import React, { FunctionComponent } from 'react';
 
+import './date.css'
+
 export interface MessageHeadingProps {
     username: string;
     date: Date;

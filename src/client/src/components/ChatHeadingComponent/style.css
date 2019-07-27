@@ -1,0 +1,9 @@
+.channel-header {
+    height: 5%;
+    position: relative;
+}
+.channel-header h1 {
+    color: white;
+    font-height: 80%;
+    margin: 0;
+}

@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import {MessagesList} from "./MessagesList";
+import {SendMessageForm} from "../SendMessageComponent/SendMessageForm";
+
+import './messages.css'
+
+import './messages.css';
 
 export interface ChannelMessagesProps {
 
@@ -17,6 +22,7 @@ export class ChannelMessages extends Component<ChannelMessagesProps, ChannelMess
         return (
             <div className={'channel-messages hyphens word-break'}>
                 <MessagesList />
+
             </div>
          )
     }

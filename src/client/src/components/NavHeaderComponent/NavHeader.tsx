@@ -1,6 +1,8 @@
 import { FunctionComponent } from 'react';
 import * as React from "react";
 
+import './style.css'
+
 export interface NavHeaderProps {
     channel: string;
 }
