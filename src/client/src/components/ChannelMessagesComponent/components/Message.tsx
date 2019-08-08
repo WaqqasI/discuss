@@ -5,17 +5,19 @@ import {MessageContent} from "./MessageContent";
 import './message-style.css'
 
 export interface MessageProps {
-
+    content: string;
+    username: string;
 }
 
-export const Message: FunctionComponent<MessageProps> = ({  }) => {
-    const lorem = 'lorem deleniti dicta earum eligendi eum exercitationem illo, labore nam nulla officia quo rem sit suscipit veniam. Adipisci,'
+export const Message: FunctionComponent<MessageProps> = ({ content, username }) => {
+
     return (
         <>
             <li className={'message'}>
-                <MessageHeading username={'test'} date={new Date()}/>
-                <MessageContent content={lorem} />
+                <MessageHeading username={username} date={new Date()}/>
+                <MessageContent content={content} />
             </li>
+            <hr />
         </>
      )
 }

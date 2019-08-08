@@ -5,7 +5,7 @@ import {Navigation} from "./subComponents/Navigation";
 
 
 export const App = () => (
-  <div className={'container'}>
+  <div className={'container'} style={{color: "#F9F871", backgroundColor: '#288AC4'}}>
     <ChatArea />
     <Navigation />
   </div>

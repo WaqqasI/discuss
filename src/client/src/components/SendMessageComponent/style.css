@@ -1,23 +1,32 @@
 
 .message-form {
-    height: 10%;
-    min-height: 50px;
-    background-color: darkolivegreen;
+    height: 5%;
     width: 100%;
     font-size: 0;
+    margin-top: 1px;
 }
 
 .message-form input {
     display: inline-block;
+    vertical-align: top;
     height: 100%;
     width: 80%;
     padding: 5px;
     border-radius: 20px;
+    border: 0;
+    font-size: 20px;
+    color: #F9F871;
+    background-color: #35DCAA;
 }
 .message-form button {
     display: inline-block;
-    font-size: 20px;
+    vertical-align: top;
+    font-size: 30px;
     height: 100%;
     width: 20%;
     border-radius: 10px;
+    border: 0;
+    padding: 0;
+    background: #35DCAA;
+    color: #F9F871;
 }

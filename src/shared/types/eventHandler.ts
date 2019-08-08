@@ -1,0 +1,1 @@
+export type eventHandler = (e: Event) => any;
