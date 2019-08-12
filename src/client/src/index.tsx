@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './components/App';
-import _ from 'lodash/fp';
-import svgURL from 'assets/logo.svg'
-import {trace} from 'logger'
-import { test } from 'shared/types/test'
+// import svgURL from 'assets/logo.svg'
+// import {trace} from 'logger'
+// import { test } from 'shared/types/test'
+import {ThemeProvider} from "./components/subComponents/ThemeProvider";
 
-_.flow(console.log, trace)(svgURL)
-console.log(test)
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const Application = () => <ThemeProvider> <App/> </ThemeProvider>;
+
+ReactDOM.render(<Application />, document.getElementById('root'));
